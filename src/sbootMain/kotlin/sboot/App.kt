@@ -17,7 +17,7 @@ class App : WebMvcConfigurer, WebServerFactoryCustomizer<ConfigurableServletWebS
 
     override fun customize(factory: ConfigurableServletWebServerFactory) {
         val mappings: MimeMappings = MimeMappings.lazyCopy(MimeMappings.DEFAULT)
-        mappings.add("wasm", "application/wasm;charset=utf-8")
+        mappings.add("wasm", "application/wasm")
         factory.setMimeMappings(mappings)
     }
 
