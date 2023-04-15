@@ -31,10 +31,11 @@ Access http://localhost:8080
 
 ```
 docker buildx build --platform=wasi/wasm32 -f Dockerfile-wasm -t wasm-docker-app .
-docker run --platform=wasi/wasm32 --runtime=io.containerd.wasmedge.v1 wasm-docker-app
+docker run --rm --platform=wasi/wasm32 --runtime=io.containerd.wasmedge.v1 wasm-docker-app
 ```
 
 # References
 
 * [docker-without-containers](https://wasmlabs.dev/articles/docker-without-containers/)
 * [docker-and-wasm](https://collabnix.com/docker-and-wasm-containers-better-together/)
+* [native-dynamic-libraries](https://kotlinlang.org/docs/native-dynamic-libraries.html#generated-headers-file)
