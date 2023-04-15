@@ -1,0 +1,5 @@
+FROM nginx
+COPY favicon.ico /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
+RUN mkdir -p /usr/share/nginx/html/build/bin/wasm/releaseExecutable
+COPY ./build/bin/wasm/releaseExecutable/* /usr/share/nginx/html/build/bin/wasm/releaseExecutable

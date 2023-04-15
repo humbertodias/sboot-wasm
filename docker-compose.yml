@@ -1,0 +1,8 @@
+services:
+  wasm-docker-web:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile-wasm-web
+    ports:
+      - "8080:80"
