@@ -37,7 +37,6 @@ kotlin {
           dependencies {
              implementation("org.springframework.boot:spring-boot-starter")
              implementation("org.springframework.boot:spring-boot-starter-web")
-			 implementation("org.springframework:spring-webmvc")
 			 implementation("javax.servlet:javax.servlet-api:4.0.1")
 			 implementation(kotlin("reflect"))
 			 implementation(kotlin("stdlib-jdk8"))
