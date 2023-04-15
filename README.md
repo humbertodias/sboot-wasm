@@ -27,12 +27,16 @@ docker-compose up -d
 ```
 Access http://localhost:8080
 
-# Docker - Terminal
+[//]: # (# Docker - Terminal)
 
-```
-docker buildx build --platform=wasi/wasm32 -f Dockerfile-wasm -t wasm-docker-app .
-docker run --rm --platform=wasi/wasm32 --runtime=io.containerd.wasmedge.v1 wasm-docker-app
-```
+[//]: # ()
+[//]: # (```)
+
+[//]: # (docker buildx build --platform=wasi/wasm32 -f Dockerfile-wasm -t wasm-docker-app .)
+
+[//]: # (docker run --rm --platform=wasi/wasm32 --runtime=io.containerd.wasmedge.v1 wasm-docker-app)
+
+[//]: # (```)
 
 # References
 
